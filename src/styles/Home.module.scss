@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        't t t t t'
+        'x p p p p'
+        'x p p p p'
+        'x x x x x'
+        'x x x x x'
+        'x x x x x'
+}
+
+.container h1 {
+    line-height: 3rem;
+    grid-area: 't'
+}
+
+.gradientText {
+    background-image: linear-gradient(90deg, rgba(151,58,168,1) 0%, rgba(234,105,139,1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+
+.paragraph {
+    grid-area: 'p';
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.contactButton {
+    padding: 0.4em 0.7em;
+    color: whitesmoke;
+    background-color: #af6397;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 0.8em;
+    transition: all 0.3s;
+}
+
+.contactButton:hover {
+    padding: 0.4em 1em;
+    background-color: #d295bf;
+    box-shadow: rgba(240, 46, 169, 0.308) -5px 5px, rgba(240, 46, 169, 0.219) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
