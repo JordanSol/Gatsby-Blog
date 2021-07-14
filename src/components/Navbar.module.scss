@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+.logo {
+    width: 1.7em;
+    height: 1.7em;
+    margin-bottom: none;
+    color: #d295bf;
+}
+
+.list {
+    width: 15em;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+}
+
+.link {
+    color: #d295bf;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin: none;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    color: #e6bccd;
+    padding: 3px 0.5em;
+}
+
+.activeLink {
+    border-bottom: 1px solid #d295bf;
+    padding-bottom: 3px;
+}
