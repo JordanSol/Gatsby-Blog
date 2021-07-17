@@ -22,11 +22,11 @@ const IndexPage = () => {
               <Link to="/contact" className={styles.contactButton}>Contact me →</Link>
             </div>
             <div className={styles.testimonial}>
-              <h3 className={styles.gradientText}>Testimonial</h3>
+              <h3 className={styles.gradientText}>Testimonials</h3>
               <p>As a developer and tech enthusiast, <br/>
               my goal is to help create a better, more intuitive web. <br/>
               By using tools such as
-              <span className={styles.gradientText}> HTML, CSS, SASS, ReactJS, Gatsby, <br/>
+              <span className={styles.gradientText}> HTML, CSS, SASS, ReactJS, Gatsby,
               and GraphQL</span>, I work to create beautiful user experiences.</p>
             </div>
           </div>

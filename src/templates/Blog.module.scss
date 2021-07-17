@@ -1,0 +1,24 @@
+.title {
+    display: inline-block;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    background-image: linear-gradient(90deg, rgb(173, 67, 192) 0%, rgba(234,105,139,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.date {
+    font-weight: 200;
+    font-style: italic;
+    color: #bfbfbf;
+    margin-bottom: 2rem
+}
+
+.divider {
+    border-top: 1px solid #47126b;
+    margin-bottom: 2rem;
+}
+
+.content {
+
+}

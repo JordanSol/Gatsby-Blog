@@ -35,10 +35,16 @@
 }
 
 .container h1 {
-    line-height: 3rem;
+    font-size: 3rem;
+    line-height: 4rem;
     animation: fadeInLeft 1s;
     display: block;
-    margin: 1em 0 2em 0;
+    margin: 0em 0 2em 0;
+    
+    @media(max-width: 768px){
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
 }
 
 .gradientText {
@@ -88,7 +94,7 @@
 
 .testimonial {
     padding: 1.5em;
-
+    max-width: 50%;
     animation: fadeInRight 1s;
 
     h3 {
@@ -104,6 +110,10 @@
 
     span {
         font-weight: 400;
+    }
+
+    @media(max-width:768px) {
+        max-width: none;
     }
 }
 
@@ -123,6 +133,7 @@
 }
 
 .projects {
+    margin-top: 1.2rem;
     text-align: center;
     
     h1 {

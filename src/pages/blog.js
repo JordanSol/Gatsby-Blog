@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
-
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
+import * as styles from '../styles/BlogPage.module.scss'
 
 
 const BlogPage = () => {
@@ -16,6 +16,9 @@ const BlogPage = () => {
                         }
                         html 
                         excerpt
+                        fields {
+                            slug
+                        }
                     }
                 }
             }
@@ -25,14 +28,16 @@ const BlogPage = () => {
     return (
         <div>
             <Layout>
-                <h1>Blog</h1>
-                <p>Blog posts go here</p>
-                <ul className="posts">
+                <h1 className={styles.title}>Blog</h1>
+                <hr className={styles.divider}/>
+                <ul className={styles.posts}>
                     {data.allMarkdownRemark.edges.map(post => {
                         return (
-                            <li>
-                                <h3>{post.node.frontmatter.title}</h3>
-                                <p>{post.node.frontmatter.date}</p>
+                            <li className={styles.post}>
+                                <Link to={`/blog/${post.node.fields.slug}`}>
+                                    <h3>{post.node.frontmatter.title}</h3>
+                                    <p>{post.node.frontmatter.date}</p>
+                                </Link>
                             </li>
                         )
                     })}
