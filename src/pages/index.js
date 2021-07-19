@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Layout from "../components/Layout"
 import * as styles from '../styles/Home.module.scss'
 import portrait from '../images/portrait.jpg'
+import Head from "../components/head"
 
 const IndexPage = () => {
   return (
