@@ -20,5 +20,17 @@
 }
 
 .content {
+    h1, h2, h3 {
+        display: inline-block;
+        padding-bottom: 0.5rem;
+        background-image: linear-gradient(90deg, rgb(173, 67, 192) 0%, rgba(234,105,139,1) 100%);
+        background-clip: text;
+        color: transparent;
+    }
 
+    ol {
+        list-style-type: none;
+        margin: 0;
+
+    }
 }

@@ -119,17 +119,17 @@
 
 .contactButton {
     padding: 0.5em 0.7em;
-    color: whitesmoke;
-    background-color: rgb(87,16,137);
+    color: #d55d92;
+    background-color: transparent;
     text-decoration: none;
-    border-radius: 5px;
+    border: 2px solid #d55d92;
+    border-radius: 3px;
     transition: all 0.3s;
     animation: fadeInLeft 1s;
-}
-
-.contactButton:hover {
-    background-color: rgb(238, 82, 124);
-    box-shadow: rgba(240, 46, 169, 0.308) -5px 5px, rgba(240, 46, 169, 0.219) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    
+    &:hover {
+        background-color: #983aa856;
+    }
 }
 
 .projects {
